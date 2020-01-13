@@ -21,7 +21,18 @@ namespace WestWindConsole.Entities
         [Required]
         public string City { get; set; }
 
+        public string Region { get; set; }
+
+        public string PostalCode { get; set; }
+
+        [Required]
+        public string Country { get; set; }
+
         // TODO: Finish the other column/property mappings...
+
+        #region Not-Mapped Properties
+
+        #endregion
 
         #region Navigation Properties
         public virtual ICollection<Supplier> Suppliers { get; set; } = new HashSet<Supplier>();

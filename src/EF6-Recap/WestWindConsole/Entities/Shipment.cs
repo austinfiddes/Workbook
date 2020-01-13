@@ -16,7 +16,16 @@ namespace WestWindConsole.Entities
         public decimal FreightCharge { get; set; }
         public string TrackingCode { get; set; }
 
+        //coding foreign keys
         [ForeignKey(nameof(ShipVia))]
         public virtual Shipper Shipper { get; set; }
+
+        #region Not-Mapped Properties
+
+        #endregion
+
+        #region Navigation Properties
+
+        #endregion
     }
 }

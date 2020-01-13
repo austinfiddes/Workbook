@@ -8,13 +8,23 @@ using System.Threading.Tasks;
 
 namespace WestWindConsole.Entities
 {
-    [Table("EmployeeTerritories")]
-    public class EmployeeTerritory
+    [Table("BuildVersions")]
+    public class BuildVersion
     {
-        [Key, Column(Order = 1)] //fk
-        public int EmployeeID { get; set; }
-        [Key, Column(Order = 2)] //fk
-        public string TerritoryID { get; set; }
+        [Key]
+        public int Id { get; set; }
+
+        [Required]
+        public int Major { get; set; }
+
+        [Required]
+        public int Minor { get; set; }
+
+        [Required]
+        public int Build { get; set; }
+
+        [Required]
+        public int ReleaseDate { get; set; }
 
         #region Not-Mapped Properties
 

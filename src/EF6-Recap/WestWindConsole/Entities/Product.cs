@@ -18,9 +18,9 @@ namespace WestWindConsole.Entities
         [Required, StringLength(40, ErrorMessage = "Product Name cannot be longer than 40 characters")]
         public string ProductName { get; set; }
 
-        public int SupplierID { get; set; }
+        public int SupplierID { get; set; } //fk
 
-        public int CategoryID { get; set; }
+        public int CategoryID { get; set; } //fk
 
         [Required, StringLength(20, ErrorMessage = "Quantity per Unit is restricted to 20 characters in length")]
         public string QuantityPerUnit { get; set; }
@@ -33,7 +33,13 @@ namespace WestWindConsole.Entities
 
         public bool Discontinued { get; set; }
 
+        #region Not-Mapped Properties
+
+        #endregion
+
+        #region Navigation Properties
         // TODO: Introducing Navigation Properties
         public virtual Category Category { get; set; }
+        #endregion
     }
 }

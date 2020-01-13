@@ -13,21 +13,51 @@ namespace WestWindConsole.Entities
     {
         [Key]
         public int EmployeeID { get; set; }
+
+        [Required]
         public string LastName { get; set; }
+
+        [Required]
         public string FirstName { get; set; }
+
         public string TitleOfCourtesy { get; set; }
+
         public string JobTitle { get; set; }
+
         public int? ReportsTo { get; set; }  // FK to the employee who is a manager
+
+        [Required]
         public DateTime HireDate { get; set; }
+
         public string OfficePhone { get; set; }
+
         public string Extension { get; set; }
+
+        [Required]
         public DateTime BirthDate { get; set; }
+
+        [Required]
         public int AddressID { get; set; }
+
+        [Required]
         public string HomePhone { get; set; }
+
         public byte[] Photo { get; set; }
+
         public string PhotoMimeType { get; set; }
+
         public string Notes { get; set; }
+
         public bool Active { get; set; }
+
+        public int TerminationDate { get; set; }
+
+        [Required]
+        public bool OnLeave { get; set; }
+
+        public string LeaveReason { get; set; }
+
+        public int ReturnDate { get; set; }
 
         #region Not-Mapped Properties
         // TODO: Demonstrate [NotMapped]

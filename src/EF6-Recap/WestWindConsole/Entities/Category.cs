@@ -15,7 +15,6 @@ namespace WestWindConsole.Entities
         [Key] // Identifies this property as mapping to the Primary Key
         public int CategoryID { get; set; }
 
-
         [Required] // Use this for string/varchar columns that are NOT NULL
         [StringLength(15, ErrorMessage = "Category Name cannot be more than 15 characters long")]
         public string CategoryName { get; set; }
@@ -27,6 +26,11 @@ namespace WestWindConsole.Entities
         [StringLength(40, ErrorMessage = "Picture Mime Type has a maximum of 40 characters")]
         public string PictureMimeType { get; set; }
 
+        #region Not-Mapped Properties
+
+        #endregion
+
+        #region Navigation Properties
         // TODO: Introducing Navigation Properties
         // This is a "navigation property" that references a collection of Products that belong to this Category.
         // The virtual keyword allows us to do "lazy-loading".
@@ -35,5 +39,6 @@ namespace WestWindConsole.Entities
             // Notice I "initialize" the property with a new HashSet<Product>
             // Think of this as an "empty list" that I'm initializing it with. 
             new HashSet<Product>();
+        #endregion
     }
 }

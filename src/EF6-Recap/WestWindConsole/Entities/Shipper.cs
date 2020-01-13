@@ -12,7 +12,13 @@ namespace WestWindConsole.Entities
         public string CompanyName { get; set; }
         public string Phone { get; set; }
 
+        #region Not-Mapped Properties
+
+        #endregion
+
+        #region Navigation Properties
         public virtual ICollection<Shipment> Shipments { get; set; } =
             new HashSet<Shipment>();
+        #endregion
     }
 }

@@ -21,7 +21,8 @@ namespace WestWindConsole.Entities
         #endregion
 
         #region Navigation Properties
-
+        public virtual Employee Employee { get; set; }
+        //TODO: Territory relation
         #endregion
     }
 }

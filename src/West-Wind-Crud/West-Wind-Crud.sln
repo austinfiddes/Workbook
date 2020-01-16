@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29209.62
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApp", "WebApp\WebApp.csproj", "{E04310BA-BF63-4545-97FF-903A20AA1C93}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WestWindSystem", "WestWindSystem\WestWindSystem.csproj", "{C209E8AB-4660-4BCA-B498-3C0C445354CB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E04310BA-BF63-4545-97FF-903A20AA1C93}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E04310BA-BF63-4545-97FF-903A20AA1C93}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E04310BA-BF63-4545-97FF-903A20AA1C93}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E04310BA-BF63-4545-97FF-903A20AA1C93}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C209E8AB-4660-4BCA-B498-3C0C445354CB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C209E8AB-4660-4BCA-B498-3C0C445354CB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C209E8AB-4660-4BCA-B498-3C0C445354CB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C209E8AB-4660-4BCA-B498-3C0C445354CB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A80C40E7-2127-4C82-B1AC-D1157FBA448F}
+	EndGlobalSection
+EndGlobal
